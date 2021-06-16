@@ -90,8 +90,9 @@ ul {
 .content {
     min-width: 500px;
     padding: 25px;
+    padding-left: 400px;
     display: inline;
-    vertical-align: middle;
+    vertical-align: right;
 }
 
 footer {
@@ -269,3 +270,39 @@ footer {
     background-color: #2D2D2D
   }
   
+
+
+
+}
+.stage {
+    border-bottom: 3px solid #444;
+    display: flex;
+    height: 330px;
+    width: 100%;
+}
+.box {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color: #f4433600;
+    height: 200px;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    width: 200px;
+}
+.bounce-4 {
+    animation-name: bounce-4;
+    animation-timing-function: ease;
+}
+@keyframes bounce-4 {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-100px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+
+
+
+Resources
